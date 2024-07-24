@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --primary-color: rgb(22, 36, 34);
+      --white-color: var(--white-color);
+      --dark-color: #75807f;
+      --about-bg-color: linear-gradient(470deg, rgb(248, 97, 97), rgb(39, 64, 65));
+
+
+
+    }
+
+    /*button*/
+    .custom-btn:hover {
+      color: rgb(255, 247, 247);
+    }
+
+    .bg-color {
+      background: var(--danger-color);
+      color: var(--dark-color);
+    }
+
+    /* BG OVERLAY */
+    .bg-overlay {
+      background: var(--dark-color);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.40;
+    }
+
+    /*HERO */
+    .hero {
+      min-height: 120vh;
+      position: relative;
+    }
+
+    .yoga {
+      min-height: 120vh;
+      position: relative;
+    }
+
+    nav {
+      color: rgb(37, 34, 34);
+      text-indent: 30px;
+      padding-inline: 30px;
+      border-style: ridge;
+      border-width: 1px;
+    }
+
+    nav a:hover {
+      background-color: gray;
+      color: rgb(14, 4, 4);
+
+    }
+
+    a a:hover {
+      background-color: gray;
+      color: white;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sunny Gym</title>
+
+
+  </head>
+
+  <body dat-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav style="background-color:rgb(156, 236, 232);" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+
+        <img style=" border-radius:50%;
+          box-shadow: 0 0 20px black;" src="logo.jpg" width="80" height="90">
+
+        <a class="  text-dark navbar-brand" href="index.html"><B> SUNNY GYM</B></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link smoothScroll  text-dark">Home</a>
+            </li>
+            <br>
+
+            <li class="nav-item">
+              <a href="#about" class="nav-link smoothScroll text-dark">About </a>
+            </li><br>
+
+            <li class="nav-item">
+              <a href="#class" class="nav-link smoothScroll  text-dark">Classes</a>
+            </li><br>
+
+            <li class="nav-item">
+              <a href="#schedule" class="nav-link smoothScroll  text-dark">Schedules</a>
+            </li><br><br>
+            <li class="nav-item">
+              <a href="#review" class="nav-link smoothScroll  text-dark">Reviews</a>
+            </li> <br <li class="nav-item">
+            <a href="#contact" class="nav-link smoothScroll  text-dark">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="btn custom-btn bg-warning mt-3" data-aos="fade-up" data-aos-delay="300"
+                data-toggle="modal" data-target="#membershipForm">Register here</a>
+
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <br>
+
+
+    <!-- HERO -->
+    <div style="background-image: url('bunny.jpg');" </div>>
+      <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+
+        <div class="bg-overlay"></div>
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-8 col-md-10 mx-auto col-12">
+              <div class="hero-text mt-5 text-center">
+
+                <h5 class=" text-light ">Build a Healthy Lifestyle!</h5>
+
+
+                <h1 class="text-light">Upgrade your body at SUNNY GYM </h1>
+                <div>
+                  <a style="padding-inline: 50px; padding-left: 50px; font-size:large; background-color:rgb(227, 195, 218); ;"
+                    class="text-dark" href="#feature" class="btn custom-btn mt-5" data-aos="fade-up"
+                    data-aos-delay="600">Get started</a>
+
+
+                  <a style="padding-inline: 30px; font-size: larger; background-color:aqua;" class="text-dark"
+                    href="#about" class="btn custom-btn bordered mt-5" data-aos="fade-up" data-aos-delay="700">learn
+                    more</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+    <br><br><br><b><br><br><br><br>
+
+
+
+      <section class="feature" id="feature" style="background-image: url('yoga.svg');">
+        <div class="container">
+          <div class="row">
+
+            <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+              <h2 class="mb-3 text-dark" data-aos="fade-up"> Are You New to the MyGym?</h2>
+
+              <h6 class="mb-4 text-dark" data-aos="fade-up">Your membership for 1 months (Rupees -6000)</h6>
+
+              <h4 style="background-color: rgb(152, 204, 143);">MyGym will help you to maintain your health and fitness
+                you will find only at MY GYM</h4>
+              <br><br>
+              <br> <br><br><br>
+              <br>
+              <br>
+
+
+            </div>
+
+            <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+              <div class="about-working-hours">
+                <div>
+
+                  <h2 class="mb-4 text-dark" data-aos="fade-up" data-aos-delay="500">Working hours</h2>
+
+                  <strong class="d-block" data-aos="fade-up" data-aos-delay="600"> 1.Sunday : Closed</strong>
+
+                  <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700"> 2.Monday - Friday</strong>
+
+                  <p data-aos="fade-up" data-aos-delay="800">7:00 AM - 10:00 PM</p>
+
+                  <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700"> 3.Saturday</strong>
+
+                  <p data-aos="fade-up" data-aos-delay="800">6:00 AM - 4:00 PM</p>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+        <br><br><br>
+
+      </section>
+      <br><br><br>
+      <section style="padding-right: 120px;">
+        <div class="container">
+          <div class="row">
+
+            <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+              <div>
+                <h3> Register here</h3>
+              </div>
+              <div>
+                <a href="#" class="btn custom-btn bg-warning mt-3" data-aos="fade-up" data-aos-delay="300"
+                  data-toggle="modal" data-target="#membershipForm">Become a member today</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <br>
+      <br><br><br><br><br><br><br>
+
+
+
+
+      <!-- ABOUT -->
+      <section class="about section" id="about" style=" border-radius:5%;
+     box-shadow: 0 0 20px black;">
+        <div class="container">
+          <div class="row">
+
+            <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+              <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hello,WE ARE SUNNY GYM</h2>
+
+              <p data-aos="fade-up" data-aos-delay="400">WE can assure you that ,if you join us you will surely maintain
+                your Health and Fitness.</p>
+
+              <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow"
+                  href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">MyGym Membership</a>, you can
+                <a rel="nofollow" href="mailto:jayparmar7654321@gmail.com" target="_parent">contact us</a> immediately.
+                Thank you.
+              </p>
+
+            </div>
+
+            <div style="padding-top: 80px;" class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up"
+              data-aos-delay="700">
+              <div class="team-thumb">
+                <img style=" border-radius:100%;
+                                    box-shadow: 0 0 20px black;" src="images.jpeg" class="img-fluid" alt="Trainer">
+
+                <div class="team-info d-flex flex-column">
+
+                  <h3>Manthena Satyanarayana</h3>
+                  <hr>
+                  <br><br>
+                  <i>>>><h5>Yoga Instructor</h5></i>
+                  <i>is a certified yoga instructor with over [X] years of experience in guiding individuals towards a
+                    healthier and more balanced lifestyle. Specializing in various styles of yoga, including Hatha,
+                    Vinyasa, and Ashtanga, [Trainer's Name] tailors each session to meet the unique needs and goals of
+                    their clients.
+
+                  </i>
+
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 60px;" class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12"
+              data-aos="fade-up" data-aos-delay="800">
+              <div class="team-thumb">
+                <img style=" border-radius:120%;
+                                    box-shadow: 0 0 20px black;" src="image_search_1691942870201.jpg" class="img-fluid"
+                  alt="Trainer">
+
+                <div class="team-info d-flex flex-column">
+
+                  <h3>Venkatesh Fitness</h3>
+                  <hr>
+                  <br><br>
+                  <i>>>> <h5>Body trainer</h5></i>
+                  <i>Specializing in personalized workout programs,designs routines that cater to the specific needs and
+                    goals of each client, whether it’s weight loss, muscle gain, or overall fitness improvement. Their
+                    training methods combine strength training, cardiovascular exercises, and flexibility routines to
+                    ensure a balanced and effective fitness regimen.</i>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <br><br><br><br><br><br><br>
+
+
+      <!-- CLASS -->
+      <section class="class section" id="class" style=" border-radius:5%;
+     box-shadow: 0 0 20px black;">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12 col-12 text-center mb-5">
+
+
+              <h2 data-aos="fade-up" data-aos-delay="200">Our Training Classes</h2>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+              <div class="class-thumb">
+                <img src="yoga-class.jpg" class="img-fluid" alt="Class">
+
+                <div class="class-info">
+                  <h3 class="mb-1">Yoga</h3>
+
+                  <span><strong>Trained by</strong> - Yoga Expert</span><br>
+
+                  <span class="class-price">5000 /-</span>
+
+                  <p class="mt-3">Yoga is a light, which once lit will never dim .</p>
+                  <p>yoga is good for health we are good to share that we are also conducting the yoga class good, it
+                    will helpful to maintsin good health.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+              <div class="class-thumb">
+                <img src="aero.jpg" class="img-fluid" alt="Class">
+
+                <div class="class-info">
+                  <h3 class="mb-1">Aerobics</h3>
+
+                  <span><strong>Trained by</strong> - Aerobics Trainer</span><br>
+
+                  <span class="class-price">4999-/</span>
+
+                  <p class="mt-3">True power of energy comes from Aerobics</p>
+                  <p>The Aerobics will help you to maintain the good health and the perfect life no health issues. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+              <div class="class-thumb">
+                <img src="cardio.jpg" class="img-fluid" alt="Class">
+
+                <div class="class-info">
+                  <h3 class="mb-1">Cardio</h3>
+
+                  <span><strong>Trained by</strong> - Cardio Experts</span><br>
+
+                  <span class="class-price">5999-/</span>
+
+                  <p class="mt-3">Good things come to those who sweat....</p>
+                  <p>The cardio will help you to do the weight loss. and weight gain to it is the one of the good for
+                    health.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <br><br><br><br><br><br><br>
+
+
+      <!-- SCHEDULE -->
+      <section class="schedule section bg-info" id="schedule">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12 col-12 text-center"><br><br>
+              <h2 class="text-dark bg-light" data-aos="fade-up" data-aos-delay="200">Our weekly GYM schedules</h2> <br>
+            </div>
+
+            <div class="col-lg-12 py-5 col-md-12 col-12">
+              <table style="border: #624e4e 2px;"
+                class="table table-bordered table-responsive schedule-table bg-warning" data-aos="fade-up"
+                data-aos-delay="300 >
+
+                                     <thead class=" thead-light">
+                <th><i class="fa fa-calendar"></i></th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                </thead>
+
+                <tbody class="bg-light">
+                  <tr>
+                    <td class="bg-warning"><small>7:00 am</small></td>
+                    <td>
+                      <strong>Cardio</strong>
+                      <span>7:00 am - 9:00 am</span>
+                    </td>
+                    <td>
+                      <strong>Power Fitness</strong>
+                      <span>7:00 am - 9:00 am</span>
+                    </td>
+                    <td class="bg-light"></td>
+                    <td class="bg-light"></td>
+                    <td>
+                      <strong>Yoga Section</strong>
+                      <span>7:00 am - 9:00 am</span>
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td class="bg-warning"><small>9:00 am</small></td>
+                    <td class="bg-light"></td>
+                    <td class="bg-light"></td>
+                    <td>
+                      <strong>Boxing</strong>
+                      <span>8:00 am - 9:00 am</span>
+                    </td>
+                    <td>
+                      <strong>Areobic</strong>
+                      <span>8:00 am - 9:00 am</span>
+                    </td>
+                    <td class="bg-light"></td>
+                    <td>
+                      <strong>Cardio</strong>
+                      <span>8:00 am - 9:00 am</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="bg-warning"><small>11:00 am</small></td>
+                    <td></td>
+                    <td>
+                      <strong>Boxing</strong>
+                      <span>11:00 am - 2:00 pm</span>
+                    </td>
+                    <td>
+                      <strong>Areobic</strong>
+                      <span>11:30 am - 3:30 pm</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <strong>Body work</strong>
+                      <span>11:50 am - 5:20 pm</span>
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td class="bg-warning"><small>2:00 pm</small></td>
+                    <td>
+                      <strong>Boxing</strong>
+                      <span>2:00 pm - 4:00 pm</span>
+                    </td>
+                    <td>
+                      <strong>Power lifting</strong>
+                      <span>3:00 pm - 6:00 pm</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <strong>Cardio</strong>
+                      <span>6:00 pm - 9:00 pm</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <strong>Crossfit</strong>
+                      <span>5:00 pm - 7:00 pm</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section> <br><br><br><br><br><br>
+
+
+      <section id="review">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" style="" src="image_search_1691938001646.jpg" weidth="100" height="500"
+                  alt="First slide">
+                <div class="carousel-caption d-none d-md-block bg-light">
+                  <h2 class="text-dark">My journey</h2>
+                  <p class="lead">Iam very excited to share this iam done this successfully , I lost 16 kgs now iam very
+                    happy . </p>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="image_search_1691938010549.jpg" weidth="100" height="500"
+                  alt="Second slide">
+                <div class="carousel-caption d-none d-md-block bg-info">
+                  <h2>PRIYA</h2>
+                  <p class="lead"> Has a girl i faced many problems in beign a obbssed so then i decided to loss weight
+                    , i lost 24 kgs in 6 months thaks for sunny Gym .</p>
+
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100" src="image_search_1691938432064.jpg" weidth="100" height="500"
+                  alt="Third slide">
+                <div class="carousel-caption d-none d-md-block bg-warning">
+                  <h2>Surender singh</h2>
+                  <p class="lead">My self surender singh i have participated in the national body bulding championship
+                    programm in thailand and i got GOLD MEDAL thanku sunny GYM</p>
+
+                </div>
+              </div>
+
+              <div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+      </section>
+      <br><br><br><br>
+      <hr>
+
+      <hr>
+
+
+
+      <!-- CONTACT -->
+      <section "contact section" id="contact">
+        <div class="container">
+          <div class="bg-warning">
+            <img style=" border-radius:50%;
+          box-shadow: 0 0 ;" src="con.jpeg" width="35" height="40">&nbsp;&nbsp;
+
+            <a class="  text-dark navbar-brand" href="index.html">&nbsp;<h3>Contacts Information,</h3></a>
+          </div>
+          <br>
+          <br><br>
+          <h4>SUNNY GYM</h4>
+          <br>
+          <p> AP IIIT RGUKT RKV
+            <br>
+            Idupulapaya(V),Vempalli(M),YSR Kadapa(D)
+          </p>
+
+          <br>
+          <h6>cell : 9676002081</h6>
+          <h6>pincode : 516330</h6>
+          <br>
+          <div>
+            <a href="https://www.instagram.com/sunny_chiluka07?igsh=eGVjZDA2enF1bXo4"> instagram</a>&nbsp;&nbsp;<img
+              style=" border-radius:50%;
+                    box-shadow: 0 0 20px rgb(202, 49, 49);" src="insta.jpeg" width="30"
+              height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://wa.me/9676002081"> Whatsapp</a>&nbsp;&nbsp;<img style=" border-radius:50%;
+                    box-shadow: 0 0 20px rgb(109, 193, 195);" src="WhatsApp Image 2023-08-13 at 10.46.05 PM.jpeg"
+              width="30" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://www.facebook.com/profile.php?id=100025448063447&mibextid=JRoKGi">facebook</a>&nbsp;&nbsp;<img
+              style=" border-radius:50%;
+                    box-shadow: 0 0 20px rgb(69, 159, 64);" src="face.jpeg" width="30" height="30">
+          </div>
+          <br><br><br>
+
+          <div class="container">
+            <H2>OUR Location :</H2>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/place/Academic+Block+II/@14.335349,78.5372284,17z/data=!4m6!3m5!1s0x3bb3a24b0f6122f7:0x2f69e74bd1ed6582!8m2!3d14.3353438!4d78.5398033!16s%2Fg%2F1q5hrp4gx?entry=ttu"
+                style="height:200px;width:300px;" title="Iframe Example"></iframe>
+            </div>
+            <div>
+              <a
+                href="https://www.google.com/maps/place/Academic+Block+II/@14.335349,78.5372284,17z/data=!4m6!3m5!1s0x3bb3a24b0f6122f7:0x2f69e74bd1ed6582!8m2!3d14.3353438!4d78.5398033!16s%2Fg%2F1q5hrp4gx?entry=ttu">OUR
+                Location</a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <br><br><br><br>
+
+
+      <!-- FOOTER -->
+      <footer class="site-footer bg-info">
+        <div class="container">
+          <div class="row">
+
+            <div class="ml-auto col-lg-4 col-md-5">
+              <p class="copyright-text">Copyright &copy; Sunny Gym
+
+                <br>Design with ❤️: <a href="https://www.github.com/jay-2000">Sunny</a>
+              </p>
+            </div>
+
+            <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+              <p class="mr-4">
+                <i class="fa fa-envelope-o mr-1"></i>
+                <a class="text-light" href="mailto:jayparmar7654321@gmail.com">Contact Us</a>
+                <br>
+                <a class="text-light"
+                  href="https://www.google.com/search?q=gym+&tbm=isch&ved=2ahUKEwjdgPfNstqAAxVkz6ACHZytC1kQ2-cCegQIABAA&oq=gym+&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzIHCAAQigUQQzIICAAQgAQQsQMyBwgAEIoFEEMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyBAgAEAMyCAgAEIAEELEDOgUIABCABFDqBVjSEmDGGGgAcAB4AYAB-wSIAeMQkgEJMC4yLjUuNS0xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bTLZZJ2WOOSeg8UPnNuuyAU&bih=613&biw=1366&client=ubuntu&hs=kGL">policy
+                  & terms</a>&nbsp;
+                <br>&nbsp;&nbsp;
+                <a class="text-light"
+                  href="https://www.google.com/search?client=ubuntu&hs=kGL&sca_esv=556573016&channel=fs&sxsrf=AB5stBh5hgQELhe_XVBCspeF8oOAqptk2Q:1691955811599&q=gym+equipments&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjh1YDJstqAAxVHgVYBHXzWAYAQ0pQJegQIDBAB&biw=1366&bih=613&dpr=1">
+                  gym equipments</a>
+              </p>
+
+              <!-- <p><i class="fa fa-phone mr-1"></i> 010-020-0840</p> -->
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+      <!-- form -->
+      <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <form action="formdata.php" method="post">
+                <label for="label">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="enter name" required>
+                <span id="errid"></span>
+                <label for="label">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="enter your mail@gmail.com">
+                <span id="erremail"></span>
+                <label for="label">Phone number</label>
+                <input type="tel" class="form-control" name="phone" placeholder="enter your number" pattern="[0-9]{10}"
+                  required>
+                <span id="errphone"></span>
+                <label for="label">Age</label>
+                <input type="number" class="form-control" name="age" placeholder="enter your number">
+                <span id="errage"></span>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="signup-agree"><br>
+                  <label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the <a
+                      href="#">Terms &amp;Conditions</a>
+                  </label>
+                  <br>
+                  <br><br>
+                  <button type="submit" class="form-control bg-success" id="submit-button" name="submit">Submit
+                    Button</button>
+
+
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer"></div>
+
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function validateform() {
+          const name = docunent.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const number = document.getElementById('phone').value.trim();
+          const age = document.getElementById('age').value.trim();
+
+          const errname = document.getElementById("errname");
+          const erremail = document.getElementById("erremail");
+          const errphone = document.getElementById("errphone");
+          const errage = document.getElementById("errage");
+          function validate() {
+            const pattern = /^[a-zA-Z][0-9]{6}$/;
+            const check = pattern.test(userid.value);
+            if (name.value == "")
+              errname.innerText = "name required";
+            else if (name.value.length != 7)
+              errorid.innerText = "length should be 10";
+            else if (check != true)
+              errname.innerText = "fill the name";
+          }
+          return true;
+        }
+        form.addEventListener('submit', event => {
+          event.preventDefault();
+          validate();
+        });
+</body >
+</html >
+
+      
